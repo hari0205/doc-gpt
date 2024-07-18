@@ -22,6 +22,10 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Prerequisites
+
+This project requires Docker to work.
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
@@ -31,6 +35,13 @@
 ```bash
 $ yarn install
 ```
+
+## To run this project
+
+Just run the following command
+`docker-compose up --build`
+
+This will create and build containers required to run the project. It might take a few minutes.
 
 ## Running the app
 
@@ -71,3 +82,14 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Working
+
+- To load web pages :
+  `localhost:3000/docs/load`
+  ![doc/load](./static/image.png)
+
+- To Q&A over it :`localhost:3000/docs/predict`
+  ![alt text](./static/image-1.png)
+
+> Loading webpages to vectorDB may take some time depending on the depth of web page

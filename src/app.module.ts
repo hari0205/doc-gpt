@@ -6,9 +6,13 @@ import { VectorstoreModule } from './vectorstore/vectorstore.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [ConfigModule.forRoot({
-    isGlobal: true,
-  }),DocModule, VectorstoreModule],
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
+    DocModule,
+    VectorstoreModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

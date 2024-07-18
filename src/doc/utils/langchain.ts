@@ -55,7 +55,10 @@ export class Langchain {
     try {
       await vectorstore.addDocuments(docs);
       this.logger.log('Docs added to vector store');
-      return {message: 'Added documents to vector store', status: HttpStatus.OK}
+      return {
+        message: 'Added documents to vector store',
+        status: HttpStatus.OK,
+      };
     } catch (error) {
       this.logger.error('Failed to add docs to vector store', error);
     }
